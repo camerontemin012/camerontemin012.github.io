@@ -1,0 +1,15 @@
+body{
+            background-color: MistyRose;
+}
+header{
+            background-color: SkyBlue;
+}
+table, tr, th, td{
+            border: 1px black solid;
+            border-radius: 10px
+}
+header{
+    border: 5px black solid;
+    margin: 20px;
+    padding: 20px;
+}
