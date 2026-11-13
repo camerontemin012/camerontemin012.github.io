@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; }
+    img { display: block; width: 100%; background: #ddd; }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    p { color: #555; line-height: 1.6; margin-bottom: 0.5rem; }
+    a { color: #1f5cab; }
+    a:hover { text-decoration-thickness: 2px; }
+    button { padding: 0.5rem 1.5rem; border: none; border-radius: 5px; background: #333; color: #fff; cursor: pointer; }
+    nav { display: flex; gap: 1rem; }
+    nav a { text-decoration: none; color: inherit; }
+    input[type="text"] { padding: 0.4rem 0.75rem; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; width: 100%; }
+    label { display: flex; align-items: center; gap: 0.5rem; }
+    /* Layout */
+    .c1 {
+      display: grid;
+      grid:
+        '.   .   .' auto
+        'img img img' auto
+        'nav nav nav' auto
+        / 1fr 1fr 1fr;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .c2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.5rem;
+    }
+    .c3 {
+      padding: 1rem;
+    }
+    .c4 {
+      grid-area: img;
+      aspect-ratio: 8 / 3;
+    }
+    .c5 {
+      grid-area: nav;
+    }
+    .c6 {
+      padding: 1rem;
+    }
+    .c7 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+    .c8 {
+      display: grid;
+      grid:
+        'img img img .' 1fr
+        'img img img .' 1fr
+        '.   .   .   .' 1fr
+        / 1fr 1fr 1fr 1fr;
+      padding: 1rem;
+    }
+    .c9 {
+      grid-area: img;
+      padding: 1rem;
+    }
+    .c10 {
+      aspect-ratio: 4 / 3;
+    }
+    .c11 {
+      padding: 1rem;
+    }
+    .c12 {
+      aspect-ratio: 1;
+    }
+    .c13 {
+      padding: 1rem;
+    }
+    .c14 {
+      aspect-ratio: 1;
+    }
+    .c15 {
+      padding: 1rem;
+    }
+    .c16 {
+      aspect-ratio: 1;
+    }
+    .c17 {
+      padding: 1rem;
+    }
+    .c18 {
+      aspect-ratio: 1;
+    }
+    .c19 {
+      padding: 1rem;
+    }
+    .c20 {
+      aspect-ratio: 1;
+    }
+    .c21 {
+      padding: 1rem;
+    }
+    .c22 {
+      aspect-ratio: 1;
+    }
+    .c23 {
+      text-align: center;
+    }
+    .c24 {
+      text-align: center;
+    }
+    .c25 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      padding: 0.5rem;
+    }
+    .c26 {
+      padding: 1rem;
+    }
+    .c27 {
+      aspect-ratio: 4 / 3;
+    }
+    .c28 {
+      text-align: center;
+    }
+    .c29 {
+      padding: 1rem;
+    }
+    .c30 {
+      aspect-ratio: 4 / 3;
+    }
+    .c31 {
+      text-align: center;
+    }
+    .c32 {
+      padding: 1rem;
+    }
+    .c33 {
+      aspect-ratio: 4 / 3;
+    }
+    .c34 {
+      text-align: center;
+    }
+    .c35 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .c36 {
+      aspect-ratio: 8 / 3;
+    }
+    .c37 {
+      aspect-ratio: 8 / 3;
+    }
+    .c38 {
+      aspect-ratio: 8 / 3;
+    }
+    .c39 {
+      aspect-ratio: 8 / 3;
+    }
+    .c40 {
+      aspect-ratio: 4 / 3;
+    }
+    .c41 {
+      aspect-ratio: 3 / 4;
+    }
+    .c42 {
+      height: 2.5rem;
+      width: 3.33rem;
+    }
+    .c43 {
+      width: 65%;
+      aspect-ratio: 1;
+    }
+    .c44 {
+      aspect-ratio: 1;
+    }
+    .c45 {
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c46 {
+      width: 65%;
+      aspect-ratio: 1;
+    }
+    .c47 {
+      aspect-ratio: 3 / 4;
+    }
+    .c48 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem;
+    }
+    .c49 {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+    .c50 {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+    .c51 {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+    .c52 {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+    .c53 {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+    .c54 {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+    .c55 {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+    .c56 {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+    .c57 {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+  </style>
+</head>
+<body>
+<header class="c1">
+  <h1>Page Heading</h1>
+  <div class="c2">
+    <input type="text" placeholder="Enter text" class="c3">
+    <button>Click me</button>
+  </div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Work</a>
+    <a href="#">Contact</a>
+  </nav>
+  <img src="placeholder.jpg" alt="" class="c4">
+  <nav class="c5">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Work</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+<main class="c6">
+  <h2>Section Heading</h2>
+  <div class="c7">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+    <p><a href="#">Lorem</a> ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit. Sed do <a href="#">eiusmod</a> tempor incididunt ut <a href="#">labore</a> et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+  </div>
+</main>
+<div class="c8">
+  <div class="c9">
+    <img src="placeholder.jpg" alt="" class="c10">
+    <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum</a> <a href="#">dolor sit amet, consectetur adipiscing elit. Sed</a></p>
+  </div>
+  <div class="c11">
+    <img src="placeholder.jpg" alt="" class="c12">
+    <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do</a> eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+  </div>
+  <div class="c13">
+    <img src="placeholder.jpg" alt="" class="c14">
+    <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do</a> eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+  </div>
+  <div class="c15">
+    <img src="placeholder.jpg" alt="" class="c16">
+    <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do</a> eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+  </div>
+  <div class="c17">
+    <img src="placeholder.jpg" alt="" class="c18">
+    <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do</a> eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+  </div>
+  <div class="c19">
+    <img src="placeholder.jpg" alt="" class="c20">
+    <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do</a> eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+  </div>
+  <div class="c21">
+    <img src="placeholder.jpg" alt="" class="c22">
+    <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do</a> eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+  </div>
+</div>
+<h2 class="c23">Section Heading</h2>
+<p class="c24">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem <a href="#">ipsum dolor sit amet, consectetur adipiscing elit. Sed</a></p>
+<div class="c25">
+  <div class="c26">
+    <img src="placeholder.jpg" alt="" class="c27">
+    <p class="c28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+  </div>
+  <div class="c29">
+    <img src="placeholder.jpg" alt="" class="c30">
+    <p class="c31">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+  </div>
+  <div class="c32">
+    <img src="placeholder.jpg" alt="" class="c33">
+    <p class="c34">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+  </div>
+</div>
+<div class="c35">
+  <img src="placeholder.jpg" alt="" class="c36">
+  <img src="placeholder.jpg" alt="" class="c37">
+  <img src="placeholder.jpg" alt="" class="c38">
+  <img src="placeholder.jpg" alt="" class="c39">
+  <img src="placeholder.jpg" alt="" class="c40">
+  <img src="placeholder.jpg" alt="" class="c41">
+  <img src="placeholder.jpg" alt="" class="c42">
+  <img src="placeholder.jpg" alt="" class="c43">
+  <img src="placeholder.jpg" alt="" class="c44">
+  <img src="placeholder.jpg" alt="" class="c45">
+  <img src="placeholder.jpg" alt="" class="c46">
+  <img src="placeholder.jpg" alt="" class="c47">
+</div>
+<footer class="c48">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+  <img src="placeholder.jpg" alt="" class="c49">
+  <img src="placeholder.jpg" alt="" class="c50">
+  <img src="placeholder.jpg" alt="" class="c51">
+  <img src="placeholder.jpg" alt="" class="c52">
+  <img src="placeholder.jpg" alt="" class="c53">
+  <img src="placeholder.jpg" alt="" class="c54">
+  <img src="placeholder.jpg" alt="" class="c55">
+  <img src="placeholder.jpg" alt="" class="c56">
+  <img src="placeholder.jpg" alt="" class="c57">
+  <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+</footer>
+  <script>
+  (function() {
+    var s = document.createElement("script");
+    s.src = "https://cdn.jsdelivr.net/gh/gracehoppercenter/validate@1.0.5/validate.js";
+    s.async = false;
+    document.head.appendChild(s);
+  })();
+  </script>
+</body>
+</html>
