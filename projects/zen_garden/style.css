@@ -1,0 +1,26 @@
+/*
+  ITD110 Zen Garden Project
+  Your name: Cameron Temin
+  Your design concept (one sentence):
+This page is designed for the halloween season.
+  All of your CSS goes in this file.
+*/
+body{
+    font-family: 'Atkison Hyperlegible', Verdana, sans-serif;
+	background: #a2a8d3;
+    }
+footer{
+	background: #38598b;
+}
+
+#disclaimer{
+    display:block;
+    background-color:white;
+    border: 3px red solid;
+    font-size: 20px;
+    font-weight:bold;
+    background: #e7eaf6;
+}
+a:hover{
+    color: red;
+}
