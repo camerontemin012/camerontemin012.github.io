@@ -9,6 +9,63 @@ body{
     font-family: 'Atkison Hyperlegible', Verdana, sans-serif;
 	background: #a2a8d3;
     }
+   body{
+      background-image: 
+        url(images/jack-o-lantern.jpg),
+         url(images/jack-o-lantern.jpg),
+ url(images/jack-o-lantern.jpg),
+ url(images/jack-o-lantern.jpg),
+ url(images/jack-o-lantern.jpg),
+ url(images/jack-o-lantern.jpg),
+ url(images/jack-o-lantern.jpg),
+ url(images/jack-o-lantern.jpg),
+ url(images/jack-o-lantern.jpg),
+ url(images/jack-o-lantern.jpg),
+ url(images/jack-o-lantern.jpg),
+ url(images/jack-o-lantern.jpg),
+  url(images/jack-o-lantern.jpg),
+url(images/jack-o-lantern.jpg),
+url(images/jack-o-lantern.jpg),
+url(images/jack-o-lantern.jpg),
+url(images/jack-o-lantern.jpg);
+       background-repeat: no-repeat;
+    background-position:
+    10% 15%,
+    67% 25%,
+    93% 36%,
+    66% 52%,
+    74% 36%,
+    49% 84%,
+    12% 3%,
+    91% 34%,
+    99% 100%,
+    26% 73%,
+    29% 38%,
+    21% 14%,
+    72% 33%,
+    99% 16%,
+    9% 8%,
+    7% 82%,
+    42% 50%;
+    background-size:
+    22px,
+    34px,
+    16px,
+    19px,
+    7px,
+    6px,
+    33px,
+    45px,
+    60px,
+    90px,
+    20px,
+    94px,
+    100px,
+    35px,
+    67px,
+    28px,
+    17px;
+}
 footer{
 	background: #38598b;
 }
@@ -23,4 +80,24 @@ footer{
 }
 a:hover{
     color: red;
+    font-weight:bold;
+}
+.submenu {
+    display: none;
+}
+.menu-item:hover .submenu,
+.menu-item:focus-within .submenu {
+    display: block;
+}
+ul{
+    display:flex;
+    list-style-type:none;
+    padding:10px;
+    justify-content: space-around;
+}
+.card-list{
+    display:grid;
+    gap:10px;
+    grid-template-columns:50% 50%;
+    grid-template-columns:335 33% 33%;
 }
